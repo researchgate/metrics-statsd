@@ -100,7 +100,7 @@ subprojects {
     key = project.hasProperty('bintrayKey') ? bintrayKey : System.getenv('BINTRAY_KEY')
     configurations = ['archives']
     pkg {
-      userOrg = 'readytalk'
+      userOrg = 'researchgate'
       repo = 'maven'
       name = 'metrics-statsd'
     }
