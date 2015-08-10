@@ -101,7 +101,7 @@ subprojects {
     configurations = ['archives']
     pkg {
       userOrg = 'researchgate'
-      name = 'metrics-statsd'
+      repo = 'metrics-statsd'
     }
     publish = true
   }
