@@ -4,7 +4,7 @@ buildscript {
   }
   dependencies {
     classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.7'
-    classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:0.6"
+    classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
   }
 }
 
@@ -101,9 +101,9 @@ subprojects {
     configurations = ['archives']
     pkg {
       userOrg = 'researchgate'
-      repo = 'maven'
       name = 'metrics-statsd'
     }
+    publish = true
   }
 
   artifacts {
