@@ -26,7 +26,7 @@ subprojects {
     apply 'com.jfrog.bintray'
   }
   
-  group = 'com.readytalk'
+  group = 'net.researchgate'
   description = 'Metrics StatsD Support'
 
   repositories {
@@ -101,7 +101,8 @@ subprojects {
     configurations = ['archives']
     pkg {
       userOrg = 'researchgate'
-      repo = 'metrics-statsd'
+      name = "metrics-statsd"
+      repo = 'maven'
     }
     publish = true
   }
